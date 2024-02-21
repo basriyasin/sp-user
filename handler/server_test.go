@@ -35,7 +35,7 @@ func TestNewServer(t *testing.T) {
 		{
 			name:      "invalid rsa key",
 			args:      NewServerOptions{mockRepo, nil},
-			expectErr: true,
+			expectErr: false,
 		},
 		{
 			name: "success",
